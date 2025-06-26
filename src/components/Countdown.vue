@@ -1,10 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-
 const dateTime = new Date('2025-07-03T09:00:00');
-
 const timeLeft = ref(timeRemaining());
-
 let timer = null
 
 function timeRemaining() {
@@ -25,7 +22,6 @@ function timeRemaining() {
   };
 }
 
-
 onMounted(() => {
   timer = setInterval(() => {
     timeLeft.value = timeRemaining();
@@ -39,7 +35,6 @@ onUnmounted(() => {
 
 <template>
 <div v-if="timeLeft.total > 0">
-
     <div class="text-center mb-10">
       <h2 class="text-5xl">Countdown to F1</h2>
       <p>(When I set off from my house, dependent on how cooperative the kids are)</p>
@@ -81,5 +76,5 @@ onUnmounted(() => {
   frameborder="no" 
   allow="autoplay" 
   src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/ramirez-471538183/formula-1-theme-brian-tyler&auto_play=true&loop=true">
-</iframe>>
+</iframe>
 </template>
