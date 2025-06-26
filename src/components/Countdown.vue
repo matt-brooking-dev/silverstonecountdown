@@ -69,7 +69,7 @@ onUnmounted(() => {
   <div v-else>
     <h2>Countdown Complete!</h2>
   </div>
-  <iframe class="opacity-0 invisible" 
+  <iframe class="opacity-0 invisible absolute top-[-999999px]" 
   width="100%" 
   height="166" 
   scrolling="no" 
