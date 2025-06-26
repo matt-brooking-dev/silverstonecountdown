@@ -1,0 +1,6 @@
+@import '@fontsource/racing-sans-one';
+@import "tailwindcss";
+
+@theme {
+  --font-racing: "Racing Sans One", sans-serif;
+}
